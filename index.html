@@ -1,40 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My First Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharv | Web & Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Welcome — Main naam yahan</h1>
-    <p>Yeh meri pehli website. Main apps & websites banata hun.</p>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <h2 class="logo">Atharv Dev</h2>
+    <button class="login-btn" onclick="showLogin()">Login</button>
   </header>
 
-  <main class="content">
-    <section class="about">
-      <h2>About</h2>
-      <p>Thoda sa bata — kya offer karta hai (example: website, app).</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Turn Your Ideas into Reality — Web & Game Development That Delivers!</h1>
+    <p>Custom websites, addictive games, and smart solutions — built just for you.<br>Message me now and let's build something epic.</p>
+    <div class="cta">
+      <a href="#contact" class="btn">Start Your Project</a>
+      <a href="#contact" class="btn secondary">Message Me Now</a>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <!-- Simple contact form (will not send anywhere yet) -->
-      <form id="contactForm" onsubmit="return false;">
-        <input type="text" id="name" placeholder="Your name" required />
-        <input type="email" id="email" placeholder="Your email" required />
-        <textarea id="message" placeholder="Brief message"></textarea>
-        <button id="sendBtn">Send (demo)</button>
-      </form>
-      <p id="formMsg" style="display:none;">Thanks! (demo)</p>
-    </section>
-  </main>
+  <!-- Services -->
+  <section class="services">
+    <h2>💼 Services I Offer:</h2>
+    <ul>
+      <li>🌐 Web Development (Portfolio, Business, E-commerce)</li>
+      <li>🎮 Game Development (2D/3D, Unity, Unreal)</li>
+      <li>📱 App Development (Android/iOS)</li>
+      <li>🧠 AI & Automation Projects</li>
+      <li>🛠️ Bug Fixes & Optimization</li>
+    </ul>
+  </section>
 
-  <footer class="site-footer">
-    <small>© 2025 Your Name</small>
-  </footer>
+  <!-- Why Choose Me -->
+  <section class="why">
+    <h2>🙌 Why Choose Me?</h2>
+    <ul>
+      <li>✅ Fast Delivery & Clean Code</li>
+      <li>✅ Affordable Pricing</li>
+      <li>✅ 100% Custom Work</li>
+      <li>✅ Friendly Support & Communication</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <blockquote>
+      "Working with Atharv was smooth and professional. My site looks amazing!"  
+      <span>— Happy Client</span>
+    </blockquote>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>📩 Got an idea? Let's build it together.</h2>
+    <form id="requestForm">
+      <input type="text" id="work" placeholder="What do you want to build?" required />
+      <input type="text" id="contactInfo" placeholder="Your Email / WhatsApp / Instagram" required />
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <!-- Login Section (Hidden by default) -->
+  <div id="loginBox" class="login-box">
+    <div class="login-content">
+      <h3>Admin Login</h3>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p id="loginMsg"></p>
+    </div>
+  </div>
+
+  <!-- Admin Requests List -->
+  <div id="requestsBox" class="requests-box">
+    <h3>📋 Client Requests</h3>
+    <ul id="requestsList"></ul>
+  </div>
 
   <script src="script.js"></script>
 </body>
