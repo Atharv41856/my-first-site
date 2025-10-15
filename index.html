@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My First Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Welcome — Main naam yahan</h1>
+    <p>Yeh meri pehli website. Main apps & websites banata hun.</p>
+  </header>
+
+  <main class="content">
+    <section class="about">
+      <h2>About</h2>
+      <p>Thoda sa bata — kya offer karta hai (example: website, app).</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <!-- Simple contact form (will not send anywhere yet) -->
+      <form id="contactForm" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" placeholder="Brief message"></textarea>
+        <button id="sendBtn">Send (demo)</button>
+      </form>
+      <p id="formMsg" style="display:none;">Thanks! (demo)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Your Name</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
